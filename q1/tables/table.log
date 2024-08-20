@@ -1,0 +1,201 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.4)  20 AUG 2024 17:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**table.tex
+(./table.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{tabular}
+                   [15pt]{ |c| c| c|}
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+<recently read> \myvec 
+                       
+l.5 point $\vec{P}$ & $\myvec
+                             {-1 \\ 3}$ & \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.5 point $\vec{P}$ & $\myvec{-1 \\ 3
+                                     }$ & \\
+? 
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.5 point $\vec{P}$ & $\myvec{-1 \\ 3
+                                     }$ & \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 point $\vec{P}$ & $\myvec{-1 \\ 3
+                                     }$ & \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.5 point $\vec{P}$ & $\myvec{-1 \\ 3
+                                     }$ & \\
+? 
+Missing character: There is no 3 in font nullfont!
+! Missing { inserted.
+<inserted text> 
+                {
+l.5 point $\vec{P}$ & $\myvec{-1 \\ 3}$ &
+                                          \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 point $\vec{P}$ & $\myvec{-1 \\ 3}$ &
+                                          \\
+? 
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+<recently read> \myvec 
+                       
+l.7 point $\vec{Q}$ & $\myvec
+                             {2 \\ 5}$\\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 point $\vec{Q}$ & $\myvec{2 \\ 5
+                                    }$\\
+? 
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.7 point $\vec{Q}$ & $\myvec{2 \\ 5
+                                    }$\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 point $\vec{Q}$ & $\myvec{2 \\ 5
+                                    }$\\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 point $\vec{Q}$ & $\myvec{2 \\ 5
+                                    }$\\
+? 
+Missing character: There is no 5 in font nullfont!
+! Missing { inserted.
+<inserted text> 
+                {
+l.8 \hline
+          
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 \hline
+          
+? 
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.12 \hline
+           
+? 
+! You can't use `\hrule' here except with leaders.
+\hline ->\noalign {\ifnum 0=`}\fi \hrule 
+                                         \@height \arrayrulewidth \futurelet...
+l.12 \hline
+           
+? 
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   \futurelet 
+l.12 \hline
+           
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \futurelet 
+l.12 \hline
+           
+? 
+)
+*
+
+Overfull \hbox (158.00067pt too wide) in paragraph at lines 1--0
+[][] 
+ []
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+! Emergency stop.
+<*> 
+    
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 22 strings out of 476091
+ 440 string characters out of 5794082
+ 1851330 words of memory out of 5000000
+ 20504 multiletter control sequences out of 15000+600000
+ 512595 words of font info for 33 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 19i,9n,12p,112b,144s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
