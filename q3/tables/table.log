@@ -1,0 +1,121 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.6)  28 AUG 2024 01:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**table.tex
+(./table.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{tabular}
+                   [12pt]{ |c|c|c|}
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+! Undefined control sequence.
+<recently read> \brak 
+                      
+l.5 $\vec{A}$ & $\brak
+                      {k+1,2k}$  & - \\
+? 
+Missing character: There is no - in font nullfont!
+! Undefined control sequence.
+<recently read> \brak 
+                      
+l.7 $\vec{B}$ & $\brak
+                      {3k,2k+3}$ & - \\
+? 
+Missing character: There is no - in font nullfont!
+! Undefined control sequence.
+<recently read> \brak 
+                      
+l.9 $\vec{C}$ & $\brak
+                      {5k-1,5k}$ & - \\
+? 
+Missing character: There is no - in font nullfont!
+)
+*
+
+Overfull \hbox (158.00067pt too wide) in paragraph at lines 1--0
+[][] 
+ []
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+! Emergency stop.
+<*> 
+    
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 22 strings out of 478287
+ 447 string characters out of 5849290
+ 290004 words of memory out of 5000000
+ 18318 multiletter control sequences out of 15000+600000
+ 469567 words of font info for 29 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 19i,8n,12p,112b,140s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
