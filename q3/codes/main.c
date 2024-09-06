@@ -1,15 +1,15 @@
 #include <stdio.h>
-extern int is_collinear(float x1, float y1, float x2, float y2, float x3, float y3);
+extern int is_collinear(float x_1, float y_1, float x_2, float y_2, float x_3, float y_3);
 
 void find_collinear_k() {
     for (int k = -100; k <= 100; k++) {
         float k_float = (float)k;
 
-        float x1 = k_float + 1, y1 = 2 * k_float;
-        float x2 = 3 * k_float, y2 = 2 * k_float + 3;
-        float x3 = 5 * k_float - 1, y3 = 5 * k_float;
+        float x_1 = k_float + 1, y_1 = 2 * k_float;
+        float x_2 = 3 * k_float, y_2 = 2 * k_float + 3;
+        float x_3 = 5 * k_float - 1, y_3 = 5 * k_float;
 
-        if (is_collinear(x1, y1, x2, y2, x3, y3)) {
+        if (is_collinear(x_1, y_1, x_2, y_2, x_3, y_3)) {
             printf("Points are collinear when k = %.1f\n", k_float);
         }
     }
