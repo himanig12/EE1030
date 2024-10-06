@@ -59,34 +59,42 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \begin{enumerate}
-\item Find the values of k if the points $\myvec{A}\brak{k+1,2k}$ , $\myvec{B}\brak{3k,2k+3}$ , $\myvec{C}\brak{5k-1,5k}$ are collinear.\\
+\item Find the values of k if the points $\vec{A}\brak{k+1,2k}$ , $\vec{B}\brak{3k,2k+3}$ , $\vec{C}\brak{5k-1,5k}$ are collinear.\\
 \textbf{Solution} Given,\\
 \begin{table}[h!]    
 \centering
 \input{tables/table.tex}
 \label{q3}
 \end{table}\\
-for these points to be collinear , the area should be zero;
+For Points $\vec{A},\vec{B},\vec{C}$ to be collinear if
 \begin{align}
-\myvec{P} = x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\\
-0 = \brak{k+1}\brak{-3k+3}+\brak{3k}\brak{3k}+\brak{5k-1}\brak{-3}\\
-0 = 6k^2-15k+6
-0 = \brak{6k-3}\brak{k-2}
+    rank \myvec{\vec{B}-\vec{A} & \vec{C}-\vec{A}} & = 1\\
+    \vec{B}-\vec{A} = \myvec{3k \\ 2k+3} - \myvec{k+1 \\ 2k}\\
+    = \myvec{2k-1 \\ 3}\\
+    \vec{C}-\vec{A} = \myvec{5k-1\\5k}-\myvec{k+1\\2k}\\
+  = \myvec{4k-2\\3k}\\
+  \myvec{\vec{B}-\vec{A} & \vec{C}-\vec{A}} =\myvec{2k-1 & 4k-2 \\ 3 & 3k}\\
+  \end{align}
+  Now, rank of this matrix should be 1.
+  \begin{align}
+  \myvec{2k-1 & 4k-2 \\ 3 & 3k} &\xrightarrow[]{R_2\rightarrow R_2 - R_1} \myvec{2k-1 & 4k-2 \\ 4-2k & -k+2}\\
+  rank\myvec{2k-1 & 2\brak{2k-1} \\ -2\brak{-k+2} & -k+2}=1\\
+  \end{align}
+  For the rank to be one, either of below should be true,
+  \begin{align}
+  2k-1=0 \\
+  -k+2=0
 \end{align}
-then, 
+then,
 \begin{align}
 k=2;
 k=0.5   
 \end{align}
 \begin{figure}[ht]
    \centering
-   \includegraphics[width=0.7\linewidth]{figs/q3_1.png}
+   \includegraphics[width=0.7\linewidth]{figs/Figure_1.png}
    \label{q31}
 \end{figure}
-\begin{figure}[ht]
-   \centering
-   \includegraphics[width=0.7\linewidth]{figs/q3_2.png}
-   \label{q32}
-\end{figure}
+
 
 \end{document}

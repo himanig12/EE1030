@@ -1,46 +1,64 @@
-from ctypes import *
 import numpy as np
 import matplotlib.pyplot as plt
+import ctypes
 
-collinear = CDLL('./collinear.so')
+collinearity_lib = ctypes.CDLL('./collinear.so')
+collinearity_lib.determinant.argtypes = [ctypes.POINTER(ctypes.c_double * 6)]
+collinearity_lib.determinant.restype = ctypes.c_double
 
-collinear.is_collinear.restype = c_int
-collinear.is_collinear.argtypes = [c_float, c_float, c_float, c_float, c_float, c_float]
+data = np.loadtxt('points.txt')
+if data.shape[1] != 6:
+    raise ValueError("Each line in points.txt must contain 6 values for 3 points.")
 
-def plot_collinear_points(k, x_1, y_1, x_2, y_2, x_3, y_3):
-    plt.figure(figsize=(8, 6)) # Set the figure size for better visibility
 
-    plt.scatter([x_1, x_2, x_3], [y_1, y_2, y_3], color='green')
+num_points = data.shape[0]  
+if num_points == 0:
+    raise ValueError("No points found in points.txt.")
 
-    plt.text(x_1, y_1, f'({x_1:.1f}, {y_1:.1f})', fontsize=9, verticalalignment='bottom', horizontalalignment='right')
-    plt.text(x_2, y_2, f'({x_2:.1f}, {y_2:.1f})', fontsize=9, verticalalignment='bottom', horizontalalignment='right')
-    plt.text(x_3, y_3, f'({x_3:.1f}, {y_3:.1f})', fontsize=9, verticalalignment='bottom', horizontalalignment='right')
+points = data.reshape(num_points, 3, 2)
 
-    plt.plot([x_1, x_2, x_3, x_1], [y_1, y_2, y_3, y_1], 'g--')
+def solve_matrix(points):
+    A = points[:, 0, :]
+    B = points[:, 1, :]
+    C = points[:, 2, :]
 
-    plt.title(f'Collinear Points for k = {k:.1f}')
-    plt.xlabel('X-axis')
-    plt.ylabel('Y-axis')
+    matrix = np.array([[A[:, 0], A[:, 1], np.ones(num_points)],
+                       [B[:, 0], B[:, 1], np.ones(num_points)],
+                       [C[:, 0], C[:, 1], np.ones(num_points)]]).transpose(2, 0, 1)
 
-    plt.xlim(min(x_1, x_2, x_3) - 1, max(x_1, x_2, x_3) + 1)
-    plt.ylim(min(y_1, y_2, y_3) - 1, max(y_1, y_2, y_3) + 1)
+    det_values = np.linalg.det(matrix)
+    return det_values
 
-    plt.grid(True)
-    plt.show()
+def verify_collinearity(points):
+    num_sets = points.shape[0]
+    point_array_type = ctypes.c_double * 6  
 
-def find_collinear_k():
-    k_values = np.arange(-100.0, 100.1, 0.1) # Use numpy to include fractional values
+    point_arrays = [point_array_type(*points[i].flatten()) for i in range(num_sets)]
 
-    for k_float in k_values:
-        x_1, y_1 = k_float + 1, 2 * k_float
-        x_2, y_2 = 3 * k_float, 2 * k_float + 3
-        x_3, y_3 = 5 * k_float - 1, 5 * k_float
+    areas = np.array([collinearity_lib.determinant(ctypes.byref(point_array)) for point_array in point_arrays])
 
-        if collinear.is_collinear(c_float(x_1), c_float(y_1), c_float(x_2), c_float(y_2), c_float(x_3), c_float(y_3)):
-            rounded_k = round(k_float, 1)
-            print(f"Points are collinear when k = {rounded_k}")
-            plot_collinear_points(rounded_k, x_1, y_1, x_2, y_2, x_3, y_3)
+    return areas
 
-find_collinear_k()
-plt.savefig("q3_1.png")
-plt.savefig("q3_2.png")
+det_values = solve_matrix(points)
+
+c_det_values = verify_collinearity(points)
+
+collinear_mask = np.isclose(det_values, 0) & np.isclose(c_det_values, 0)
+
+collinear_points = points[collinear_mask]
+
+if collinear_points.size > 0:
+    plt.plot(collinear_points[:, 0, 0], collinear_points[:, 0, 1], 'o', label='Collinear Points A', color='red')
+    plt.plot(collinear_points[:, 1, 0], collinear_points[:, 1, 1], 'o', label='Collinear Points B', color='green')
+    plt.plot(collinear_points[:, 2, 0], collinear_points[:, 2, 1], 'o', label='Collinear Points C', color='blue')
+    
+    plt.plot(collinear_points[:, :, 0].T, collinear_points[:, :, 1].T, color='black')
+
+plt.title('Collinear Lines for Points')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.legend()
+plt.grid(True)
+plt.axis('equal')
+plt.show()
+plt.savefig("Figure_1.png")
