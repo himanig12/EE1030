@@ -1,0 +1,180 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{01-08-2020-shift-2-1-15}
+\author{AI24BTECH11011 - Himani Gourishetty}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+    \item For which of the following ordered pairs $\brak{\mu,\delta}$, the system of linear equations
+    \begin{align}
+    x+ 2y + 3z = 1\nonumber \\
+   3x + 4y + 5y = \mu  \nonumber\\
+   4x + 4y + 4z = \delta\nonumber
+\end{align}
+is inconsistent?
+\begin{enumerate}
+\item $\brak{4, 6}$
+\item $\brak{3, 4}$
+\item $\brak{1, 0}$
+\item $\brak{4, 3}$
+\end{enumerate}
+\item Let $y = \brak{x}$ be a solution of the differential equation, \\
+$\sqrt{1-x^2}\frac{dy}{dx}+\sqrt{1-y^2} = 0, \abs{x} <1$\\
+. If $y\brak{\frac{1}{2}} = \sqrt{\frac{3}{2}}$, then $y\brak{\frac{-1}{\sqrt{2}}}$ is equal to
+\begin{enumerate}
+    \item $\frac{-1}{\sqrt{2}}$
+    \item $\frac{-\sqrt3}{2}$
+    \item $\frac{1}{\sqrt{2}}$
+    \item $\frac{\sqrt{3}}{2}$
+\end{enumerate}
+ \item If $a, b$ and $c$ are the greatest values of $^{19}C_{p}, ^{20}C_{q}, ^{21}C_{r},$  respectively, then:
+ \begin{enumerate}
+\item $\brak{\frac{a}{11}} = \brak{\frac{b}{22}} = \brak{\frac{c}{42}}$
+\item $\brak{\frac{a}{10}} = \brak{\frac{b}{11}} = \brak{\frac{c}{42}}$
+\item $\brak{\frac{a}{11}} = \brak{\frac{b}{22}} = \brak{\frac{c}{21}}$
+\item $\brak{\frac{a}{10}} = \brak{\frac{b}{11}} = \brak{\frac{c}{21}}$
+ \end{enumerate}
+\item Which of the following is a tautology?
+\begin{enumerate}
+    \item $\brak{ \brak{P \land \brak{P \rightarrow Q}} \rightarrow Q} $
+    \item $ P \land \brak{P \lor Q} $
+    \item $ Q \rightarrow \brak{P \land \brak{P \rightarrow Q}}$ 
+    \item $ P \lor \brak{P \land Q}$
+\end{enumerate}
+\item Let $f: \mathbb{R} \rightarrow \mathbb{R}$ be such that for all $ x \in \mathbb{R} , \brak{2^{1+X} + 2^{1-x}}, f\brak{x}$  and 
+$\brak{3^x + 3^{-x} }$ are in A.P. Then the minimum value of $ f\brak{x}$ is
+\begin{enumerate}
+    \item 0
+    \item 4
+    \item 3
+    \item 2
+\end{enumerate}
+\item The locus of a point which divides the line segment joining the point $\brak{0,-1}$ and a point on the parabola, $x^2 = 4y$, internally in the ratio $1: 2$, is:
+\begin{enumerate}
+\item $9x^2 - 12y = 8$
+\item $4x^2 - 3y = 2$
+\item $x^2 - 3y =2$
+\item $9x^2 - 3y = 2$
+\end{enumerate}
+\item For $a > 0$, let the curves $C_1: y^2 = ax$ and $C_2:x^2=ay$ intersect at origin $\vec{O}$ and a point $\vec{P}$. Let the line $x = b \brak{0 < b < a}$ intersect the chord $OP$ and the x-axis at points $\vec{Q}$ and $\vec{R}$, respectively. If the line $x = b$ bisects the area bounded by the curves, $C_1$ and $C_2$ , and the area of $\Delta OQR =\frac{1}{2}$,then 'a' satisfies the equation
+\begin{enumerate}
+    \item $x^6 - 12 x^3 + 4 = 0$
+    \item $x^6 - 12 x^3 - 4 = 0$
+    \item $x^6 + 6 x^3 - 4 = 0$
+    \item $x^6 - 6 x^3 +4 = 0$
+\end{enumerate}
+\item The inverse function of $ f\brak{x} = \frac{8^{2x} - 8^{-2x}}{8^{2x}+8^{-2x}}, x \in \brak{-1,1}, $ is 
+\begin{enumerate}
+    \item $\frac{1}{4}\brak{\log_8 e}\log_e\brak{\frac{1-x}{1+x}}$
+    \item $\frac{1}{4}\brak{\log_8 e}\log_e\brak{\frac{1+x}{1-x}}$
+    \item $\frac{1}{4}\log_e\brak{\frac{1+x}{1-x}}$
+    \item $\frac{1}{4}\log_e\brak{\frac{1-x}{1+x}}$
+\end{enumerate}
+\item $\lim_{x \to 0} \brak{\frac{3x^2 + 2}{7x^2 + 2}}^\frac{1}{x^2}$ is equal to
+\begin{enumerate}
+    \item $e$
+    \item $\frac{1}{e^2}$
+    \item $\frac{1}{e}$
+    \item $e^2$
+\end{enumerate}
+\item $f\brak{x} = \brak{ \sin\brak{\tan^{-1} x} + \sin\brak{\cot^{-1} x} }^2 - 1$, where $\abs{x}>1$. If $\frac{dy}{dx}=\frac{1}{2} \frac{d}{dx}\brak{\sin^{-1} f\brak{x}}$ and $y\brak{\sqrt{3}}=\frac{\pi}{6}$, then $y\brak{-\brak{\sqrt{3}}}$ is equal to:
+\begin{enumerate}
+    \item $\frac{\pi}{3}$
+    \item $\frac{2\pi}{3}$
+    \item $\frac{-\pi}{6}$
+    \item $\frac{5\pi}{6}$
+\end{enumerate}
+\item If the equation, $x^2 + bx + 45 =0 \brak{b \in \mathbb{R}}$ has conjugate complex roots and they satisfy $\abs{z + 1} = 2\sqrt{10}$, then:
+\begin{enumerate}
+    \item $b^2 + b = 12$
+    \item $b^2 - b = 42$
+    \item $b^2 - b = 30$
+    \item $b^2 + b = 72$
+\end{enumerate}
+\item The mean and standard deviation $\brak{s.d}$ of 10 observations are 20 and 2 respectively. Each of these 10 observations is multiplied by $p$ and then reduced by $q$, where $p\neq0$ and $q\neq0$. If the new mean and standard deviation become half of their original values, then $q$ is equal to:
+\begin{enumerate}
+    \item -20
+    \item -5
+    \item 10
+    \item -10
+\end{enumerate}
+\item If $\int \frac{\cos{x}}{\sin^3x\brak{1+\sin^{6}x}^\frac{2}{3}} dx = f\brak{x}\brak{1+\sin^6x}^\frac{1}{\lambda} + c $, where c is a constant of integration, then $\lambda f \brak{\frac{\pi}{3}}$ is equal to:
+\begin{enumerate}
+    \item $-\frac{9}{8}$
+    \item $\frac{9}{8}$
+    \item 2
+    \item -2
+\end{enumerate}
+\item Let $A$ and $B$ be two independent events such that $P\brak{A} \frac{1}{3}$ and $P\brak{B} = \frac{1}{6}$. Then, which of the following is TRUE ?
+\begin{enumerate}
+    \item $P\brak{\frac{A}{A \cup B}} = \frac{1}{4}$
+    \item $P\brak{\frac{A}{B^{\prime}}} = \frac{1}{3}$
+    \item $P\brak{\frac{A}{B}}=\frac{2}{3}$
+    \item $P\brak{\frac{A^{\prime}}{B^{\prime}}} = \frac{1}{3} $
+\end{enumerate}
+\item If volume of parallelepiped whose coterminous edges are given by
+\\$\vec{u} = \hat{i} + \hat{j} + \lambda\hat{k},\\ \vec{v} = \hat{i} + \hat{j} + 3\hat{k}$ \\ and \\ $ \vec{w} = 2\hat{i} + \hat{j} + \hat{k}$ \\be 1 cu.unit. if $\theta$ be the angle between the edges $\vec{u}$ and $\vec{w}$ then, $\cos\theta$ can be:
+\begin{enumerate}
+    \item $\frac{7}{6\sqrt{6}}$
+    \item $\frac{5}{7}$
+    \item $\frac{7}{6\sqrt{3}}$
+    \item $\frac{5}{3\sqrt{3}}$
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
