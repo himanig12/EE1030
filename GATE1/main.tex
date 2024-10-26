@@ -91,22 +91,22 @@
    \item The time constant for the given circuit will be
    \begin{figure}[!ht]
 \centering
-\resizebox{0.5\textwidth}{!}{%
+\resizebox{0.4\textwidth}{!}{%
 \begin{circuitikz}
 \tikzstyle{every node}=[font=\small]
-\draw (9,11.25) to[C] (11.5,11.25);
-\draw (11,11.25) to[R] (15.5,11.25);
-\draw (15.5,8.5) to[american current source] (15.5,11.25);
-\draw [short] (15.5,8.5) -- (9,8.5);
-\draw (9,11.25) to[C] (9,8.5);
-\draw (9.75,11.25) to[C] (9.75,8.5);
-\draw (14.25,11.25) to[R] (14.25,8.5);
-\node [font=\small] at (10.25,11.75) {1F};
-\node [font=\small] at (10.25,9.75) {1F};
-\node [font=\small] at (8.5,9.75) {1F};
-\node [font=\small] at (13.25,11.5) {3$\Omega$};
-\node [font=\small] at (13.75,9.75) {3$\Omega$};
-\node [font=\small] at (16.25,10) {3A};
+\draw (5.75,11.5) to[short] (7.25,11.5);
+\draw (7.25,11.5) to[C] (9,11.5);
+\draw (9,11.5) to[R] (11.75,11.5);
+\draw (11.75,11.5) to[short] (13,11.5);
+\draw (13,9) to[american current source] (13,11.5);
+\draw [short] (13,9) -- (5.75,9);
+\draw (7.5,11.5) to[C] (7.5,9);
+\draw (5.75,11.5) to[C] (5.75,9);
+\node [font=\small] at (13.75,10.25) {3A};
+\node [font=\small] at (10.25,12) {3$\Omega$};
+\node [font=\small] at (8,12) {1F};
+\node [font=\small] at (8,10.25) {1F};
+\node [font=\small] at (5.25,10.25) {1F};
 \end{circuitikz}
 }
 \label{fig:my_label}
@@ -145,10 +145,10 @@
 	   \item 3 $\frac{rad}{s}$
            \item 4 $\frac{rad}{s}$
        \end{enumerate}
-       \item Assuming ideal elements in a circuit shown below, the voltage $V_{ab}$ will be\\
-       \begin{figure}[!ht]
-       \centering
-\resizebox{0.3\textwidth}{!}{%
+       \item Assuming ideal elements in a circuit shown below, the voltage $V_{ab}$ will be
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{
 \begin{circuitikz}
 \tikzstyle{every node}=[font=\small]
 \draw (17.25,8.5) to[american voltage source] (17.25,11.25);
@@ -167,8 +167,9 @@
 \node at (14,11.25) [circ] {};
 \node at (14,8.5) [circ] {};
 \node [font=\small] at (14,8.25) {b};
-\draw [->, >=Stealth] (15.5,10.5) .. controls (17,10.75) and (17,9) .. (15.25,9.25) ;
-\node [font=\small] at (15,9.25) {i};
+\draw [->, >=Stealth] (15.5,10.25) .. controls (17,10.5) and (17,8.75) .. (15.25,9) ;
+\node [font=\small] at (12.75,9.75) {1A};
+\node [font=\small] at (15,9) {i};
 \end{circuitikz}
 }
 \label{fig:my_label}
@@ -197,7 +198,7 @@
       \item In the circuit shown in the figure, the value of the current i will be given by
 	      \begin{figure}[!ht]
 \centering
-\resizebox{0.5\textwidth}{!}{%
+\resizebox{0.5\textwidth}{!}{
 \begin{circuitikz}
 \tikzstyle{every node}=[font=\scriptsize]
 \draw [short] (8.75,8) -- (18,8);
@@ -228,9 +229,8 @@
 \node [font=\scriptsize] at (12.5,11.25) {ab};
 \end{circuitikz}
 }
-\label{fig:my_label}
 \end{figure}
-      \begin{enumerate}
+\begin{enumerate}
           \item 0.31A
           \item 1.25A
           \item 1.75A
