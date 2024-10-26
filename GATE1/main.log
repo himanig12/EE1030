@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.6)  26 OCT 2024 04:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.6)  26 OCT 2024 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1100,12 +1100,76 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks49
 \@floatcapt=\box81
 )
-\c@theorem=\count341
-\c@problem=\count342
-\c@proposition=\count343
-\c@lemma=\count344
-\c@example=\count345
-\c@rem=\count346
+(/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2021/12/06{} The CircuiTikz circuit drawing package version
+ 1.4.5
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.te
+x
+File: pgfmodulebending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransf
+ormations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgftransformnonlinearflatness=\dimen332
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.
+code.tex
+File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@curvilinear@time@a=\dimen333
+\pgf@curvilinear@length@a=\dimen334
+\pgf@curvilinear@length@b=\dimen335
+\pgf@curvilinear@length@c=\dimen336
+\pgf@curvilinear@length@d=\dimen337
+)
+\pgf@arrows@the@rigidity=\dimen338
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@count@a=\count341
+\pgf@circ@count@b=\count342
+\pgf@circ@count@c=\count343
+\pgf@circ@res@up=\dimen339
+\pgf@circ@res@down=\dimen340
+\pgf@circ@res@zero=\dimen341
+\pgf@circ@res@left=\dimen342
+\pgf@circ@res@right=\dimen343
+\pgf@circ@res@other=\dimen344
+\pgf@circ@res@step=\dimen345
+\pgf@circ@res@temp=\dimen346
+\pgf@circ@Rlen=\dimen347
+\pgf@circ@scaled@Rlen=\dimen348
+\pgfstartlinewidth=\dimen349
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
+\ctikz@scratchbox=\box82
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count344
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen350
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
+\c@theorem=\count345
+\c@problem=\count346
+\c@proposition=\count347
+\c@lemma=\count348
+\c@example=\count349
+\c@rem=\count350
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 5
 0.
 
@@ -1113,13 +1177,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 5
 File: ot1txr.fd 2000/12/15 v3.1
 ) (./main.aux
 
-LaTeX Warning: Label `fig:11011' multiply defined.
+LaTeX Warning: Label `fig:my_label' multiply defined.
 
 
-LaTeX Warning: Label `fig:11011' multiply defined.
+LaTeX Warning: Label `fig:my_label' multiply defined.
 
 
-LaTeX Warning: Label `fig:11011' multiply defined.
+LaTeX Warning: Label `fig:my_label' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1205,16 +1269,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count347
-\scratchdimen=\dimen332
-\scratchbox=\box82
-\nofMPsegments=\count348
-\nofMParguments=\count349
+\scratchcounter=\count351
+\scratchdimen=\dimen351
+\scratchbox=\box83
+\nofMPsegments=\count352
+\nofMParguments=\count353
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count350
-\MPscratchDim=\dimen333
-\MPnumerator=\count351
-\makeMPintoPDFobject=\count352
+\MPscratchCnt=\count354
+\MPscratchDim=\dimen352
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1225,7 +1289,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count353
+\c@lstlisting=\count357
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 50.
@@ -1248,7 +1312,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count354
+\c@section@level=\count358
 )
 LaTeX Info: Redefining \ref on input line 50.
 LaTeX Info: Redefining \pageref on input line 50.
@@ -1287,30 +1351,8 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-)
-<figs/fig1.jpg, id=7, 604.2575pt x 151.56625pt>
-File: figs/fig1.jpg Graphic file (type jpg)
-<use figs/fig1.jpg>
-Package pdftex.def Info: figs/fig1.jpg  used on input line 94.
-(pdftex.def)             Requested size: 361.19843pt x 90.60048pt.
-<figs/fig2.jpg, id=8, 494.84875pt x 177.66376pt>
-File: figs/fig2.jpg Graphic file (type jpg)
-<use figs/fig2.jpg>
-Package pdftex.def Info: figs/fig2.jpg  used on input line 106.
-(pdftex.def)             Requested size: 361.19843pt x 129.6799pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/fig1.jpg>]
-<figs/fig3.jpg, id=34, 474.77374pt x 186.6975pt>
-File: figs/fig3.jpg Graphic file (type jpg)
-<use figs/fig3.jpg>
-Package pdftex.def Info: figs/fig3.jpg  used on input line 118.
-(pdftex.def)             Requested size: 361.19843pt x 142.0397pt.
- [2 <./figs/fig2.jpg> <./figs/fig3.jpg>]
-<figs/fig4.jpg, id=58, 731.73375pt x 213.79875pt>
-File: figs/fig4.jpg Graphic file (type jpg)
-<use figs/fig4.jpg>
-Package pdftex.def Info: figs/fig4.jpg  used on input line 144.
-(pdftex.def)             Requested size: 361.19843pt x 105.53546pt.
- [3 <./figs/fig4.jpg>] [4] (./main.aux)
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./main.au
+x)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1318,13 +1360,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29726 strings out of 478287
- 584640 string characters out of 5849290
- 841194 words of memory out of 5000000
- 47194 multiletter control sequences out of 15000+600000
- 528142 words of font info for 144 fonts, out of 8000000 for 9000
+ 44149 strings out of 478287
+ 1027346 string characters out of 5849290
+ 1521696 words of memory out of 5000000
+ 61562 multiletter control sequences out of 15000+600000
+ 539214 words of font info for 177 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,8n,96p,584b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,96p,584b,1197s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1332,10 +1374,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 259744 bytes).
+Output written on main.pdf (4 pages, 66317 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams
  87 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
