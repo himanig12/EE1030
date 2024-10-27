@@ -1,0 +1,15 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (9,13.25) to[L ] (12,13.25);
+\draw [short] (12,13.25) -- (15.25,13.25);
+\draw (15.25,13.25) to[R] (15.25,10);
+\draw (15.25,10) to[short] (9,10);
+\draw (9.25,13.25) to[short, -o] (9,13.25) ;
+\draw (9.25,10) to[short, -o] (9,10) ;
+\draw (12.25,13.25) to[C] (12.25,10);
+\node at (12.25,13.25) [circ] {};
+\node at (12.25,10) [circ] {};
+\node [font=\small] at (12.75,11.5) {1F};
+\node [font=\small] at (15.75,11.5) {1$\Omega$};
+\node [font=\small] at (10.75,13.75) {0.1H};
+\end{circuitikz}

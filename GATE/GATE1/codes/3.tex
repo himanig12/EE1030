@@ -1,0 +1,22 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (17.25,8.5) to[american voltage source] (17.25,11.25);
+\draw (17.25,11.25) to[R] (13.5,11.25);
+\draw (13.5,8.5) to[american current source] (13.5,11.25);
+\draw [short] (13.5,8.5) -- (17.25,8.5);
+\draw [->, >=Stealth] (14,9) -- (14,10.75);
+\node [font=\small] at (14,11.5) {a};
+\node [font=\small] at (14,11) {+};
+\node [font=\small] at (14,8.75) {-};
+\node [font=\normalsize] at (14.25,10) {V};
+\node [font=\scriptsize] at (14.5,10) {ab};
+\node [font=\small] at (18,10) {5V};
+\node [font=\small] at (15.25,11.5) {2$\Omega$};
+\node [font=\small] at (14,11.25) {.};
+\node at (14,11.25) [circ] {};
+\node at (14,8.5) [circ] {};
+\node [font=\small] at (14,8.25) {b};
+\draw [->, >=Stealth] (15.5,10.25) .. controls (17,10.5) and (17,8.75) .. (15.25,9) ;
+\node [font=\small] at (12.75,9.75) {1A};
+\node [font=\small] at (15,9) {i};
+\end{circuitikz}

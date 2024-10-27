@@ -1,0 +1,29 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\scriptsize]
+\draw [short] (8.75,8) -- (18,8);
+\draw (13.75,8) to[R] (13.75,11.25);
+\draw (13.75,11.25) to[R] (18,11.25);
+\draw (18,11.25) to[american controlled voltage source] (18,8);
+\node at (13.75,11.25) [circ] {};
+\node at (13.75,8) [circ] {};
+\node [font=\small] at (16,11.75) {3$\Omega$};
+\node [font=\small] at (13.75,11.5) {b};
+\node [font=\small] at (13.5,11.25) {-};
+\node [font=\small] at (14.25,9.5) {1$\Omega$};
+\node [font=\small] at (17.25,10) {4V};
+\node [font=\scriptsize] at (17.5,10) {ab};
+\draw [->, >=Stealth] (16.75,9.25) .. controls (16.75,10.75) and (14.75,10.75) .. (14.75,9.25) ;
+\node [font=\small] at (15,9.25) {i};
+\draw (11.25,8) to[R] (11.25,11.25);
+\draw (11.25,11.25) to[R] (8.75,11.25);
+\draw (8.75,11.25) to[american voltage source] (8.75,8);
+\node [font=\small] at (10,11.75) {1$\Omega$};
+\node [font=\small] at (10.75,9.75) {1$\Omega$};
+\node at (11.25,11.25) [circ] {};
+\node at (11.25,8) [circ] {};
+\node [font=\small] at (8,9.75) {5V};
+\node [font=\small] at (11.25,11.5) {a};
+\node [font=\small] at (11.5,11.25) {+};
+\node [font=\small] at (12.25,11.25) {V};
+\node [font=\scriptsize] at (12.5,11.25) {ab};
+\end{circuitikz}
