@@ -1,0 +1,151 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}       
+\usepackage{circuitikz}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2022-PH-27-39}
+\author{AI24BTECH11011 - Himani Gourishetty}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+
+\item The ordinary differential equation
+$$\brak{1 - x^2}y'' - xy' + 9y = 0$$
+has a regular singularity at
+\begin{enumerate}
+    \item -1
+    \item 0
+    \item +1
+    \item no finite value of x
+\end{enumerate}
+
+\item For a bipolar junction transistor, which of the following statements are true?
+\begin{enumerate}
+    \item Doping concentration of emitter region is more than that in collector and base region
+    \item Only electrons participate in current conduction
+    \item The current gain $\beta$ depends on temperature
+    \item Collector current is less than the emitter current
+\end{enumerate}
+
+\item Potassium metal has electron concentration of $1.4 \times 10^{28}$  $m^{-3}$ and the corresponding density of states at Fermi level is $6.2 \times 10^{46}$ $Joule^{-1} m^{-3}$. If the Pauli paramagnetic susceptibility of Potassium is $n\times 10^{-k}$ in standard scientific form, then the value of k $\brak{\text{an integer}}$ is $\makebox[2cm][l]{\underline{\hspace{2cm}}}$
+
+$\brak{\text{Magnetic moment of electron is } 9.3 \times 10^{-24} Joule T^{-1} ; \text{ permeability of free space is } 4\pi \times 10^{-7} TmA^{-1}}$
+
+\item A power supply has internal resistance $R_S$ and open load voltage $V_S= 5V$. When a load resistance $R_L$ is connected the power supply, a voltage drop of $V_L = 4V$ is measured across the load. The value of $\frac{R_L}{R_S}$ is $\makebox[2cm][l]{\underline{\hspace{2cm}}}$
+$\brak{\text{Round off to the nearest integer}}$
+
+\item Electric field is measured along the axis of a uniformly charged disc of radius 25 cm. At a distance d from the centre, the field differs by $10\%$ from that of a infinite plane having same charge density. The value of d is $\makebox[1cm][l]{\underline{\hspace{1cm}}}$ cm.
+$\brak{\text{Round off to one decimal place}}$
+
+\item In a solid, a Raman line observed at $300 cm^{-1}$ has intensity of Stokes line four times that of the anti-Stokes line. The temperature of the sample is $\makebox[1cm][l]{\underline{\hspace{1cm}}}$K.
+$\brak{\text{Round of to nearest integer}}$
+$\brak{1cm^{-1} \equiv 1.44K}$
+
+\item An electromagnetic pulse has pulse width of $10^{-3} s$. The uncertainty in the momentum of the correspoding photo is of the order of $10^{-N} kg m s^{-1}$, where N is an integer. The value of N is $\makebox[3cm][l]{\underline{\hspace{3cm}}}$ 
+$\brak{\text{speed of light}= 3 \times 10^8 m s^{-1}, h= 6.6 \times 10^-34 Js}$
+
+\item The wavefunction of a particle in a one-dimensional infinite well of size 2a at a certain time is $\varphi \brak{x} = \frac{1}{\sqrt{6a}}[\sqrt{2}sin\brak{\frac{\pi x}{a}} + \sqrt{3}cos\brak{\frac{\pi x}{2a}} + cos\brak{\frac{3\pi x}{2a}}]$. Probability of finding the particle in $n=2$ state at that time is $\makebox[1cm][l]{\underline{\hspace{1cm}}}$$\%$ 
+$\brak{\text{Round off to the nearest integer}}$
+
+\item A spectrometer is used to detect plasma oscillations in a sample. The spectrometer can work in the range of $3 \times 10^{12} rad s^{-1}$ to $30 \times 10^{12} rad s^{-1}$. The minimum carrier concentration that can be detected by using this spectrometer is $n \times 10^{21} m^{-3}$. The value of n is $\makebox[2cm][l]{\underline{\hspace{2cm}}}$
+$\brak{\text{Round off to two decimal places}}$
+$\brak{\text{Charge of an electron }= -1.6 \times 10^{-1}C, \text{mass of an electron }= 9.1 \times 10^{-31}kg \text{ and } \epsilon_0 = 8.85 \times 10^{-12} C^2 N^{-1} m^{-2}}$
+
+\item Consider a non-interacting gas of spin 1 particles, each with magnetic moment $\mu$, placed in a weak magnetic field B, such that $\frac{\mu B}{k_B T} << 1$. The average magnetic moment of a particle is 
+\begin{enumerate}
+    \item $\frac{2\mu}{3} \brak{\frac{\mu B}{k_B T}}$
+    \item $\frac{\mu}{2} \brak{\frac{\mu B}{k_B T}}$
+    \item $\frac{\mu}{3} \brak{\frac{\mu B}{k_B T}}$
+    \item $\frac{3\mu}{4} \brak{\frac{\mu B}{k_B T}}$
+\end{enumerate}
+
+\item Water at 300 K can be brought to 320 K using one of the following processes.\\
+Process 1: Water is brought in equilibrium with a reservoir at 320 K directly.\\
+Process 2: Water is first brought in equilibrium with a reservoir at 310 K and then with the reservoir at 320 K.\\
+Process 3: Water is first brought in equilibrium with a reservoir at 350 K and then with the reservoir at 320 K.\\
+The corresponding changes in the entropy of the universe for these processes are $\Delta S_1$, $\Delta S_2$, $\Delta S_3$ respectively. Then 
+\begin{enumerate}
+    \item $\Delta S_2 > \Delta S_1 > \Delta S_3$
+    \item $\Delta S_3 > \Delta S_1 > \Delta S_2$
+    \item $\Delta S_3 > \Delta S_2 > \Delta S_1$
+    \item $\Delta S_1 > \Delta S_2 > \Delta S_3$
+\end{enumerate}
+
+\item A student sets up Young's double slit experiment with electrons of momentum p incident normally on the slits with width w separated by distance d. In order to observe interference fringes on a screen at a distance D from the slits, which of the following conditions should be satisfied?
+\begin{enumerate}
+    \item $\frac{h}{p} > \frac{Dw}{d}$
+    \item $\frac{h}{p} > \frac{dw}{D}$
+    \item $\frac{h}{p} > \frac{d^2}{D}$
+    \item $\frac{h}{p} > \frac{d^2}{\sqrt{Dw}}$
+\end{enumerate}
+
+\item Consider a particle in three different boxes of width L. The potential inside the boxes vary as shown in figures \brak{i}, \brak{ii} and \brak{iii} with $V_0 << \frac{h^2 \pi ^2}{2m L^2}$. The corresponding ground-state energies of the particle are $E_1$, $E_2$ and $E_3$, respectively. Then
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\input{figs/fig1.tex}
+}%
+\end{figure}
+\begin{enumerate}
+    \item $E_2 > E_1 > E_3$
+    \item $E_3 > E_1 > E_2$
+    \item $E_2 > E_3 > E_1$
+    \item $E_3 > E_2 > E_1$
+\end{enumerate}
+
+
+
+\end{enumerate}
+\end{document}
