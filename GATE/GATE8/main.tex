@@ -1,0 +1,174 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}       
+\usepackage{circuitikz}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2023-ST-53-65}
+\author{AI24BTECH11011 - Himani Gourishetty}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item Let $X$ be a random variable with probability density function 
+\[
+f\brak{x}=
+\begin{cases}
+    e^{-x} & if x\geq 0\\
+    0 & otherwise
+\end{cases}
+\]
+For $a<b$, if $U\brak{a,b}$ denotes the uniform distribution over the interval $\brak{a,b}$, then which of the following is/are true?
+\begin{enumerate}
+    \item $e^{-x}$ follows $U\brak{-1,0}$ distribution
+    \item $1-e^{-x}$ follows $U\brak{0,2}$ distribution
+ \item $2e^{-x}-1$ follows $U\brak{-1,1}$ distribution
+ \item The probability mass function of $Y=[X]$ is $$P\brak{Y=k}=\brak{1-e^{-1}}e^{-k} \text{ for } k=0,1,2,\cdots$$
+ where [x] denotes the largest integer not exceeding x
+\end{enumerate}
+\item Suppose that $X$ is a discrete random variable with the following probabality mass function 
+\begin{align}
+    P\brak{X=0}=\frac{1}{2}\brak{1+e^{-1}}\\
+    P\brak{X=k}=\frac{e^{-1}}{2k!} \text{ for } k=0,1,2,3,\cdots
+\end{align}
+Which one of the following is/are true?
+\begin{enumerate}
+    \item $E\brak{X}=1$
+    \item $E\brak{X}<1$
+    \item $E\brak{X|X>0}<\frac{1}{2}$
+    \item $E\brak{X|X>0}>\frac{1}{2}$
+\end{enumerate}
+\item Suppose that U and V are two independent and identically distributed random variables each having probability density function
+\[
+f\brak{x}=
+\begin{cases}
+    \lambda^2xe^{-\lambda x} & if x>0\\
+    0 & otherwise
+\end{cases}
+\]
+where $\lambda >0$. Which of the following statements is/are true?
+\begin{enumerate}
+    \item The distribution of $U-V$ is symmetric about 0
+    \item The distribution of $UV$ does not depend on $\lambda$
+    \item The distribution of $\frac{U}{V}$ does not depend on $\lambda$
+    \item The distribution of $\frac{U}{V}$ is symmetric about 1.
+\end{enumerate}
+\item Let $\brak{X,Y}$ have joint probability mass function    \[p\brak{x}=
+\begin{cases}
+    \frac{e^{-2}}{x!\brak{y-x}!} & \text{ if} x=0,1,2\cdots,y; \text{ y}=0,1,2,\cdots\\
+    0 & otherwise
+\end{cases}
+\]
+Then which of the following is/are true?
+\begin{enumerate}
+    \item $E\brak{X|Y=4}=2$
+    \item The moment generating function of $Y$ is $e^{2\brak{e^v-1}}$ for all $v \in \mathbb{R}$
+    \item E(X)=2
+    \item The joint moment generating the function of (X,Y) is $e^{-2+\brak{1+e^u}e^v}$ or all $\brak{u,v}\in \mathbb{R}^2$
+    
+\end{enumerate}
+\item Let $\cbrak{X_n}_{n\geq1}$ be a sequence of independent and identically distributed random variables with mean 0 and variance 1, all of them defined on the same probability space. For $n=1,2,3,\cdots$, let 
+$$Y_n=\frac{1}{n}\brak{X_1X_2+X_3X_4+\cdots+X_{2n-1}X_{2n}}$$ Then which of the following is/are true?
+\begin{enumerate}
+    \item $\cbrak{\sqrt{n}Y_n}_{n\geq1}$ converges in distribution to a standard normal random variable
+    \item $\cbrak{Y_n}_{n\geq1}$ converges in $2^{nd}$ mean to 0.
+    \item $\cbrak{Y_n+\frac{1}{n}}_{n\geq1}$ converges in probability 0
+    \item $\cbrak{X_n}_{n\geq 1}$ converges almost surely to 0
+\end{enumerate}
+\item Consider the following regression model $$y_t=\alpha_0+\alpha_1t+\alpha_2t^2+\epsilon_t, \text{ } t=1,2,\cdots,100$$ where $\alpha_0,\alpha_1$ and $\alpha_2$ are unknown parameters and $\epsilon_t's$ are independent and identically distributed random variables each having $N\brak{\mu,1}$ distribution with $\mu \in \mathbb{R}$ unknown. Then which of the following statements is/are true?
+\begin{enumerate}
+    \item There exists an unbiased estimator of $\alpha_1$
+    \item There exists an unbiased estimator of $\alpha_2$
+    \item There exists an unbiased estimator of $\alpha_0$
+    \item There exists an unbiased estimator of $\mu$
+\end{enumerate}
+\item Consider the orthonormal set $$\cbrak{\vec{v_1}=\myvec{
+\frac{1}{\sqrt{3}}\\\frac{-1}{\sqrt{3}}\\ \frac{1}{\sqrt{3}}},\vec{v_2}=\myvec{
+\frac{1}{\sqrt{6}}\\\frac{2}{\sqrt{6}}\\ \frac{1}{\sqrt{6}}},\vec{v_3}=\myvec{
+\frac{1}{\sqrt{2}}\\0\\ \frac{-1}{\sqrt{2}}}}$$ with respect to the standard inner product on $\mathbb{R}^3. $ If $\vec{u}=\myvec{a\\b\\c}$ is the vector such that inner products of u with $v_1,v_2$ and $v_3$ are 1,2, and 3, respectively, then $a^2+b^2+c^2$(in integer) equals $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\item Consider the probability space $\brak{\ohm,G,P}$, where $\ohm=\cbrak{1,2,3,4},G=\cbrak{\phi,\ohm,\cbrak{1},\cbrak{4},\cbrak{2,3},\cbrak{1,4},\cbrak{1,2,3},\cbrak{2,3,4}},$ and $P\brak{\cbrak{1}}=\frac{1}{4}$. Let  $X$ be the random variable defined on the above probability space as $X\brak{1}=1,X\brak{2}=X\brak{3}=2$ and $X\brak{4}=3.$ If $P\brak{X\leq 2}=\frac{3}{4},$ then $P\brak{\cbrak{1,4}}$(rounded off to two decimal places ) equals $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\item Let $\cbrak{X_n}_{n\geq 1}$ be a sequence of independent and identically distributed random variables each having probability density function \[
+f\brak{x}=
+\begin{cases}
+    e^{-x}&if x>0\\
+    0 & otherwise
+    
+\end{cases}
+\]
+For $n\geq1$, let $Y_n=\abs{X_{2n}-X_{2n-1}}.$ If $\Bar{Y}_n=\frac{1}{n}\sum_{i=1}^{n}Y_i$ for $n\geq 1$ and $\cbrak{\sqrt{n}\brak{e^{-\Bar{Y}_n}-e^{-1}}}_{n \geq 1}$ converges in distribution to a normal random variable with mean 0 and variance $\sigma^2$, then $\sigma^2$(rounded off to two decimal places) equals $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\item Consider a birth-death process on the state space $\cbrak{1,2,3,4}.$ The birth rates are given by $\lambda_0=1,\lambda_1=1,\lambda_2=2$ and $\lambda_3=0$. The death rates are given by $\mu_0=0,\mu_1=1,\mu_2=1$ and $\mu_3=1$. If $[\pi_0,\pi_1,\pi_2,\pi_4]$ is the unique stationary distribution, then $\pi_0+2\pi_1+3\pi_2+4\pi_3$(rounded off to two decimal places) equals $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\item Let $\cbrak{-1,-\frac{1}{2},1,\frac{5}{2},3}$ be a realization of a random sample of size 5 from a population having $N\brak{\frac{1}{2},\sigma^2}$ distribution, where $\sigma>0$ is an unknown parameter. Let T be an unbiased estimator of $\sigma^2$ whose variance attains the Camer-Rao lower bound. Then based on the above data, the realized value of T (rounded off to two decimal places) equals
+\item  Let $X$ be a random sample of size 1 from a population with cumulative distribution functiion \[
+F\brak{x}=\begin{cases}
+    0 &if x<0\\
+    1-\brak{1-x}^\theta & if 0\leq x\leq1\\
+    1 & if x\geq1
+\end{cases}
+\] 
+where $\theta>0$ is an unknown parameter. To test $H_0:\theta=1$ against $H_1:\theta=2,$ consider using the critical region $\cbrak{x \in \mathbb{R}:x<0.5}$. if $\alpha$ and $\beta$ denote the level and power of the test, respectively, then $\alpha+\beta$(rounded off to two decimal places) equals $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\item Let $\cbrak{0.13,0.12,0.78,0.51}$ be a realization of a random sample of size 4 from a population with cumulative distribution function $F\brak{\cdot}$. Consider testing $$H_0:F=F_0 \text{ against } H_1:F\neq F_0,$$ where \[
+F_0\brak{x}=\begin{cases}
+    0 & if x<0\\
+    x & if 0\leq x <1\\
+    1 & if x\geq1
+\end{cases}
+\]
+Let D denote the Kolmorgov-smirnov test statistics . If $P\brak{D>0.669}=0.01$ under $H_0$ and \[
+\psi=\begin{cases}
+    1 & \text{if } H_0 \text{ is accepted at level 0,01}\\
+    0 & otherwise,
+\end{cases}
+\]
+then based on the given data, the observed value of $D+\psi$(rounded off to two decimal places) equals  $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\end{enumerate} 
+\end{document}
