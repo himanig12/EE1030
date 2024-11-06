@@ -1,0 +1,289 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}       
+\usepackage{circuitikz}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2024-PH-14-26}
+\author{AI24BTECH11011 - Himani Gourishetty}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item If a thermodynamical system is adiabatically isolated and experiences a change in volume under an externally applied constant pressure, then the thermodynamical potential minimized at equilibrium is the
+\begin{enumerate}
+    \item enthalpy
+    \item Helmholtz free energy
+    \item Gibbs free energy
+    \item grand potential
+\end{enumerate}
+\item The mean distance between the two atoms of HD molecules is $r$, where H and D denote hydrogen and deuterium, respectively. The mass of the hydrogen atom is $m_H$. The energy difference between two lowest lying rotational states of HD in multiples of $\frac{h^2}{m_Hr^2}$ is
+\begin{enumerate}
+    \item $\frac{3}{2}$
+    \item $\frac{2}{3}$
+    \item 6
+    \item $\frac{4}{3}$
+\end{enumerate}
+\item Crystal structures of two metals A and B are two-dimensional square lattices with same lattice constant $a$. Electrons in metal behave as free electrons. The Fermi surfaces corresponding to A and B are shown by solid circles in figures
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\input{figs/fig1.tex}
+}%
+\end{figure}
+The electron concentrations in A and B are $n_A$ and $n_B$ respectively. The value of $\frac{n_B}{n_A}$ is
+\begin{enumerate}
+    \item 3
+    \item 2
+    \item $3\sqrt{3}$
+    \item $\sqrt{2}$
+\end{enumerate}
+\item Consider the induced nuclear fission reaction 
+$$^{235}_{92}U+n\rightarrow^{93}_{37}Rb+^{141}_{55}Cs+2n$$ where neutron momenta in both initial and final states are negligible. The ratio of the kinetic energies (KE) of the daughter nuclei,
+$$\frac{KE\brak{^{93}_{37}Rb}}{KE\brak{^{141}_{55}Cs}}$$ is  $\makebox[3cm][l]{\underline{\hspace{1cm}}}$.
+\begin{enumerate}
+    \item $\frac{93}{141}$
+    \item $\frac{141}{93}$
+    \item 1
+    \item 0
+\end{enumerate}
+\item The symbols $C,D,V_{in}$ and $V_{0}$ shown in the figure denote capacitor, ideal diode , input voltage and output voltage, respectively,
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\input{figs/fig2.tex}
+}%
+\end{figure}
+Which one of the following output waveforms $\brak{V_0}$ is correct for the given input waveform $\brak{V_{in}}$
+\begin{enumerate}
+\item
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig3.tex}
+}%
+\end{figure}
+\item 
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig4.tex}
+}%
+\end{figure}
+\item 
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig5.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig6.tex}
+}%
+\end{figure}
+\end{enumerate}
+\item Let $N_0$ and $T_e$ respectively, denote number and kinetic energy of electrons produced in a nuclear beta decay. Which one of the following ditributions is correct?
+\begin{enumerate}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig7.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig8.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig9.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig10.tex}
+}%
+\end{figure}
+\end{enumerate}
+\item An infinitely long cylinder of radius R carries a frozen-in magnetization $\Bar{M}=ke^{-s}\hat{Z},$ where k is a constant and s is the distance from the axis of cylinder. The magnetic permeability of free space is $\mu_{0}$. There is no free current present anywhere. The magnetic flux density $\brak{\Bar{B}}$ inside the cylinder is
+\begin{enumerate}
+    \item 0
+    \item $\mu_0ke^-R\hat{z}$
+    \item $\mu_0ke^-R\hat{z}$
+    \item $\mu_0ke^{-s}\brak{\frac{R}{S}}\hat{z}$
+\end{enumerate}
+\item Atomic numbers of V,Cr,Fe and Zn are 23,24,26 and 30, respectively. Which one of the following materials does NOT show an electron spin resonance $\brak{ESR}$ spectra?
+\begin{enumerate}
+    \item V
+    \item Cr
+    \item Fe
+    \item Zn
+\end{enumerate}
+\item A particle is subjected to a potiential 
+\[
+V\brak{x}=
+\begin{cases}
+\infty & x\leq 0\\
+V_0 & a\leq x \leq b\\
+0 & ,elsewhere\\
+\end{cases}
+\]
+Here, $a>0$ and $b>a$. If the energy of the particle $E<V_0$, which one of the following schematics is a valid quantum mechanical wavefunction $\brak{\psi}$ for the system?
+\begin{enumerate}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\input{figs/fig11.tex}
+}%
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\input{figs/fig12.tex}
+}%
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\input{figs/fig13.tex}
+}%
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\input{figs/fig14.tex}
+}%
+\end{figure}
+\end{enumerate}
+\item Let $\rho\brak{\vec{p},\vec{q},t}$ be the phase space density of an ensemble of a system. The Hamiltonian of the system is $H\brak{\vec{p},\vec{q}}$. If $\cbrak{A,B}$ denotes the poisson bracket A and B, the 
+$$\frac{d\rho}{dt}=0$$ implies
+\begin{enumerate}
+    \item $\frac{d\rho}{dt}=0$
+    \item $\frac{d\rho}{dt} \propto \cbrak{\rho,H}$
+    \item $\frac{d\rho}{dt} \propto \cbrak{\rho,\frac{\vec{p}\cdot\vec{q}}{2}}$
+    \item $\frac{d\rho}{dt} \propto \cbrak{\rho,\frac{\vec{q}\cdot\vec{q}}{2}}$
+\end{enumerate}
+\item Consider the following circuit:\\
+\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig15.tex}
+}%
+\end{figure}
+Suppose the input signal P is\\
+\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig16.tex}
+}%
+\end{figure}
+and the input signal Q is\\ 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig17.tex}
+}%
+\end{figure}
+Which one of the following output signals is correct?\\
+\begin{enumerate}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig18.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig19.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig20.tex}
+}%
+\end{figure}
+\item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\input{figs/fig21.tex}
+}%
+\end{figure}
+\end{enumerate}
+\item An inertial observer sees two spacecrafts S and T flying away from each other along x-axis with indivisual speed 0.5c, where c is the speed of light. The speed of T with respect to S is
+\begin{enumerate}
+    \item $\frac{4}{5}c$
+    \item $\frac{4}{3}c$
+    \item c
+    \item $\frac{2}{3}c$
+\end{enumerate}
+\item Let P,Q and R be three different nuclei. Which one of the following nuclear processes is possible?
+\begin{enumerate}
+    \item $v_e+^{A}_{z}P \rightarrow ^{A}_{z+1}Q+e^-$
+     \item $v_e+^{A}_{z}P \rightarrow ^{A}_{z-1}R+e^+$
+      \item $v_e+^{A}_{z}P \rightarrow ^{A}_{z}P+e^++e^-$
+    \item $v_e+^{A}_{z}P \rightarrow ^{A}_{z}P+\gamma$   
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
+s

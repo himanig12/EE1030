@@ -1,0 +1,39 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\scriptsize]
+\draw [<->, >=Stealth] (3.5,12.75) -- (3.5,9.25);
+\draw [dashed] (3.5,11) -- (5.5,11);
+\draw [->, >=Stealth, dashed] (3.5,11) -- (8,11);
+\draw [short] (3.25,9.75) -- (4.25,9.75);
+\draw [short] (4.25,9.75) -- (4.25,12.25);
+\draw [short] (4.25,12.25) -- (5,12.25);
+\draw [short] (5,12.25) -- (5,9.75);
+\draw [short] (5,9.75) -- (5.75,9.75);
+\draw [short] (5.75,9.75) -- (5.75,12.25);
+\draw [short] (5.75,12.25) -- (6.5,12.25);
+\draw [short] (6.5,12.25) -- (6.5,9.75);
+\draw [short] (6.5,9.75) -- (7.25,9.75);
+\node [font=\normalsize] at (3,12.75) {V};
+\node [font=\scriptsize] at (3.25,12.5) {in};
+\node [font=\normalsize] at (3,12.25) {+3V};
+\node [font=\normalsize] at (3,9.75) {-3V};
+\draw [short] (3.25,12.25) -- (3.75,12.25);
+\node [font=\normalsize] at (8,10.75) {t};
+\draw (15.75,12.75) to[C] (10.75,12.75);
+\draw (10.75,12.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (10.75,9.75);
+\draw [short] (11,9.75) -- (10.75,9.75);
+\draw [short] (10.75,9.75) -- (16,9.75);
+\draw (14.5,9.5) to[D] (14.5,12.75);
+\draw (14.5,10) to (14.5,9.75) node[ground]{};
+\node [font=\normalsize] at (16,12.75) {+};
+\node [font=\normalsize] at (16.25,9.75) {-};
+\node [font=\normalsize] at (16,11.5) {V};
+\node [font=\scriptsize] at (16.25,11.5) {0};
+\node [font=\normalsize] at (14,11) {D};
+\node [font=\normalsize] at (13,13.25) {C};
+\node [font=\normalsize] at (10,11.25) {V};
+\node [font=\scriptsize] at (10.25,11.25) {in};
+\node at (14.5,12.75) [circ] {};
+\node at (16,9.75) [circ] {};
+\node at (15.75,12.75) [circ] {};
+\end{circuitikz}

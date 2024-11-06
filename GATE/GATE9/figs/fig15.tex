@@ -1,0 +1,24 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (4.25,14.25) to[short] (4.75,14.25);
+\draw (4.25,13.75) to[short] (4.75,13.75);
+\draw (4.75,14.25) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (6.75,14);
+\draw [short] (4.25,14.25) -- (3,14.25);
+\draw [short] (4.25,13.75) -- (4.25,14.25);
+\draw [short] (6.75,14) -- (6.75,13);
+\draw (4.25,11.5) to[short] (4.5,11.5);
+\draw (4.25,11) to[short] (4.5,11);
+\draw (4.5,11.5) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (6.5,11.25);
+\draw [short] (4.5,11) -- (3,11);
+\draw [short] (4.25,11.5) -- (4.25,11);
+\draw [short] (6.5,11.25) -- (6.75,11.25);
+\draw [short] (6.75,11.25) -- (6.75,12.25);
+\draw (6.75,12.75) to[short] (7,12.75);
+\draw (6.75,12.25) to[short] (7,12.25);
+\draw (7,12.75) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (9,12.5);
+\draw [short] (6.75,13) -- (6.75,12.75);
+\draw [short] (9,12.5) -- (10,12.5);
+\node [font=\normalsize] at (10,12.75) {Y};
+\node [font=\normalsize] at (2.75,14.25) {P};
+\node [font=\normalsize] at (3,10.75) {Q};
+\end{circuitikz}
